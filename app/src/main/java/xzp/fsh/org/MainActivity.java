@@ -55,16 +55,17 @@ public class MainActivity extends AppCompatActivity {
             ViewHolder viewHolder;
             if (convertView == null) {
                 viewHolder = new ViewHolder();
-                convertView = LayoutInflater.from(context).inflate(R.layout.gridview_item,null);
+                convertView = LayoutInflater.from(context).inflate(R.layout.gridview_item, null);
                 viewHolder.textView = (TextView) convertView.findViewById(R.id.tv);
                 convertView.setTag(viewHolder);
             } else {
-                viewHolder = (ViewHolder)convertView.getTag();
+                viewHolder = (ViewHolder) convertView.getTag();
             }
             viewHolder.textView.setText(texts[position]);
             return convertView;
         }
-        class ViewHolder{
+
+        class ViewHolder {
             TextView textView;
         }
     }
