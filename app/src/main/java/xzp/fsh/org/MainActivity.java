@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
             viewHolder.textView.setText(texts[position]);
+
+
+
             return convertView;
         }
 
